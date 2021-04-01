@@ -28,8 +28,7 @@ const sketch = function (p) {
         thief = new p.Group();
 
         let canvas = p.createCanvas(width, height);
-        canvas.parent('#game-board')
-        
+        canvas.parent('#game-board');
 
         p.fill("rgb(250, 172, 232)");
     }
@@ -57,22 +56,35 @@ const sketch = function (p) {
             }
         }
 
-        if(aliceGuess != "" && bobGuess != ""){
+        if (aliceGuess != "" && bobGuess != "") {
             let r = aliceGuess * bobGuess;
-            if (r == message){
-                result = "YOU GOT IT!";
+            let resultSpace = document.getElementById('gameSpace');
+
+
+            if (r == message) {
+                let pNode = document.createElement('p');
+                let text = document.createTextNode('YOU GOT IT');
+                pNode.appendChild(text);
+                resultSpace.appendChild(pNode);
+                p.remove();
+                // result = "YOU GOT IT!";
             } else {
-                result = "NO LUCK FOR YOU!"
+                let pNode = document.createElement('p');
+                let text = document.createTextNode('NO LUCK FOR YOU');
+                pNode.appendChild(text);
+                resultSpace.appendChild(pNode);
+                p.remove();
+                // result = "NO LUCK FOR YOU!"
             }
         }
 
-        p.textAlign(p.RIGHT, p.BOTTOM);
-        p.text(bobGuess,1,1);
-        p.textAlign(p.LEFT, p.BOTTOM);
-        p.text(aliceGuess,1,1);
-        p.textAlign(p.CENTER, p.CENTER);
-        p.text(result,1,1);
 
+        p.textAlign(p.RIGHT, p.BOTTOM);
+        p.text(bobGuess, 1, 1);
+        p.textAlign(p.LEFT, p.BOTTOM);
+        p.text(aliceGuess, 1, 1);
+        p.textAlign(p.CENTER, p.CENTER);
+        p.text(result, 1, 1);
 
         p.drawSprites();
     }
@@ -85,9 +97,9 @@ const sketch = function (p) {
         al.position.x = x;
         al.position.y = y;
         alice.add(al);
-        al.onMousePressed = function() {
+        al.onMousePressed = function () {
             console.log("mouse pressed Alice");
-            if(aliceGuess == ""){
+            if (aliceGuess == "") {
                 aliceGuess = this.width;
             }
         }
@@ -101,9 +113,9 @@ const sketch = function (p) {
         bo.position.x = x;
         bo.position.y = y;
         bob.add(bo);
-        bo.onMousePressed = function() {
+        bo.onMousePressed = function () {
             console.log("mouse pressed Bob");
-            if(bobGuess == ""){
+            if (bobGuess == "") {
                 bobGuess = this.width;
             }
         }
