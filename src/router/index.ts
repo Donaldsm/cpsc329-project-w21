@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
-import Quiz1 from '../views/Quiz1.vue';
+import Quiz1 from '../views/Quiz.vue';
 
 Vue.use(VueRouter);
 
@@ -19,8 +19,8 @@ const routes: RouteConfig[] = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },{
-    path: '/quiz1',
-    name: 'Quiz1',
+    path: '/quiz',
+    name: 'Quiz',
     component: Quiz1,
   },
 ];
