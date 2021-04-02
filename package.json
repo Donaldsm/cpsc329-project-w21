@@ -14,7 +14,13 @@
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
+<<<<<<< Updated upstream
     "vue-router": "^3.2.0"
+=======
+    "vue-router": "^3.2.0",
+    "vue-simple-alert": "^1.1.1",
+    "vue-ultimate-skeleton-cards": "^1.0.3"
+>>>>>>> Stashed changes
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
