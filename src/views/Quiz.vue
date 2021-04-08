@@ -29,13 +29,9 @@
       <div v-if="this.view == 2">
         <Q3Card class="mx-auto m-3" />
       </div>
-<<<<<<< HEAD
       <div v-if="this.view == 3">
         <Q4Card class="mx-auto m-3" />
       </div>
-=======
-      <div v-if="this.view == 3"></div>
->>>>>>> parent of 234536e (Implemented Question 8 and 4 ready for linking)
       <div v-if="this.view == 4">
         <Q5Card class="mx-auto m-3" />
       </div>
@@ -45,12 +41,8 @@
       <div v-if="this.view == 6">
         <Messenger class="mx-auto m-3"></Messenger>
       </div>
-<<<<<<< HEAD
       <div v-if="this.view == 7"><Q8Card class="mx-auto m-3" /></div>
 
-=======
-      <div v-if="this.view == 7"></div>
->>>>>>> parent of 234536e (Implemented Question 8 and 4 ready for linking)
       <div v-if="this.view == 8"></div>
       <div v-if="this.view == 9"></div>
     </div>
@@ -65,14 +57,8 @@ import Q1Card from "@/components/Question1Card.vue";
 import Q3Card from "@/components/Question3.vue";
 import Q4Card from "@/components/Question4.vue";
 import Q5Card from "@/components/Question5.vue";
-<<<<<<< HEAD
 import Q6Card from "@/components/Question6.vue";
 import Q8Card from "@/components/Question8.vue";
-=======
-
-import TC from "@/components/termsandcons.vue";
-
->>>>>>> parent of 234536e (Implemented Question 8 and 4 ready for linking)
 import Messenger from "../components/Messenger.vue";
 import Identification from "../components/Identification.vue";
 
@@ -83,6 +69,7 @@ import TC from "@/components/termsandcons.vue";
     Q1Card,
     Q3Card,
     Q5Card,
+    Q8Card,
 
     TC,
 
