@@ -6440,6 +6440,11 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
+p5@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-1.3.0.tgz#1195f8e9a1b6b4be0c8cbf329e0b63ef9f37df2f"
+  integrity sha512-Ta8GlPz7lGoZWhkfkezzJXsThRZrQP5Y2PrE3uO+WfIa+//GC/rF65rFBcHo/83eitFoWOaT3pTNRU2wA6TRaA==
+
 pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -8444,11 +8449,6 @@ timsort@^0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
-tinycolor2@^1.4.1:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
-  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
-
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -8925,13 +8925,6 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
-
-vue-ultimate-skeleton-cards@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vue-ultimate-skeleton-cards/-/vue-ultimate-skeleton-cards-1.0.3.tgz#a6eef08ee8275e0371b39c231859635b006dd323"
-  integrity sha512-6OEe4i4d1JO7Ob4lyyn48ouvv5UO4338hkQ/HB/6EFaSf0staqSAQVRP1snhjh72afUV0uNScfZSZ1bOo1irqA==
-  dependencies:
-    tinycolor2 "^1.4.1"
 
 vue@^2.6.11:
   version "2.6.12"
