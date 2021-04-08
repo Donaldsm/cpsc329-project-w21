@@ -34,7 +34,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 
-export default class Q4Card extends Vue {
+export default class Question4 extends Vue {
   private part: number = 0;
   public counter: number = 0;
   date () {
