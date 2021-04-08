@@ -1,38 +1,33 @@
 <template>
     <div class ="flex justify-center flex-col">
-        <h1 class="text-4xl font-extrabold pb-6">Question 4:</h1>
-
-        <h1 class="text-2xl font-bold pb-40">Simply go to the next question to continue.</h1>
-
-        <button class = " max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto " @click="updatePopup()">Next Question</button>
+      <component v-bind:is="component"></component>
      </div>
      
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import Q4aCard from '@/components/Question4a.vue';
+import Q4bCard from '@/components/Question4b.vue';
 
-@Component
+@Component({
+  components: {
+    'Q4a':Q4aCard,
+    'Q4b':Q4bCard,
+  }
+})
 export default class Question4 extends Vue {
   @Prop() private msg!: string;
-  private  page_count:number = 0;
+  public page_count:number = 0;
 
-  updatePopup() {
-    var r = confirm("Please update web flash player");
-    if (r == true) {
-        this.page_count++;
+  data () {
+    return {
+      component: 'Q4a'
     }
-
-
-
   }
 
 
 
-
 }
-
-
-
 
 </script>
