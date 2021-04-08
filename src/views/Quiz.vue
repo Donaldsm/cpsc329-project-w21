@@ -31,7 +31,7 @@
       </div>
       <div v-if="this.view == 3">
         <Q4Card class="mx-auto m-3" />
-        </div>
+      </div>
       <div v-if="this.view == 4">
         <Q5Card class="mx-auto m-3" />
       </div>
@@ -42,7 +42,7 @@
         <Messenger class="mx-auto m-3"></Messenger>
       </div>
       <div v-if="this.view == 7"><Q8Card class="mx-auto m-3" /></div>
-        
+
       <div v-if="this.view == 8"></div>
       <div v-if="this.view == 9"></div>
     </div>
@@ -52,17 +52,15 @@
 
 
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator';
-import Q1Card from '@/components/Question1Card.vue';
-import Q3Card from '@/components/Question3.vue';
-import Q4Card from '@/components/Question4.vue';
-import Q5Card from '@/components/Question5.vue';
-import Q6Card from '@/components/Question6.vue';
+import { Component, Vue } from "vue-property-decorator";
+import Q1Card from "@/components/Question1Card.vue";
+import Q3Card from "@/components/Question3.vue";
+import Q4Card from "@/components/Question4.vue";
+import Q5Card from "@/components/Question5.vue";
+import Q6Card from "@/components/Question6.vue";
 import Q8Card from "@/components/Question8.vue";
-import Messenger from '../components/Messenger.vue';
-import Identification from '../components/Identification.vue';
-
-
+import Messenger from "../components/Messenger.vue";
+import Identification from "../components/Identification.vue";
 
 import TC from "@/components/termsandcons.vue";
 
