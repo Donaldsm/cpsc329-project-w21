@@ -32,3 +32,5 @@ export default class Q3Card extends Vue {
   @Prop() private msg!: string;                                                                                                                                                                                                    
 }
 </script>
+
+
