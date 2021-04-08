@@ -10,10 +10,16 @@
 
 <img src="img/Q3.png" alt=""/>
 
-<h3> Do you think they should share their private key online to get support? </h3>
+<h1>source: https://www.explainxkcd.com/wiki/index.php/1553:_Public_Key</h1>
+<h3> Would posting their private key with his friends be such a bad idea? </h3>
 
-  <input type="radio" v-model="color" value="true">yes
-  <input type="radio" v-model="color" value="false">no
+
+  <input type="radio" v-model="color" value="true" name= "True">yes
+  <input type="radio" v-model="color" value="false" name= "True">no
+
+<div>
+<button class = " max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto ">Submit!</button>
+</div>
 </div> 
 </div>
 </template> 

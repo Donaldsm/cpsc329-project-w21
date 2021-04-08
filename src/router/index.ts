@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
-import Quiz1 from '../views/Quiz.vue';
+import Quiz from '../views/Quiz.vue';
 
 Vue.use(VueRouter);
 
@@ -21,7 +21,7 @@ const routes: RouteConfig[] = [
   },{
     path: '/quiz',
     name: 'Quiz',
-    component: Quiz1,
+    component: Quiz,
   },
 ];
 
