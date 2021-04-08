@@ -61,7 +61,7 @@ import Q6Card from '@/components/Question6.vue';
 import Q8Card from "@/components/Question8.vue";
 import Messenger from '../components/Messenger.vue';
 import Identification from '../components/Identification.vue';
-
+import { Component, Vue } from "vue-property-decorator";
 
 
 import TC from "@/components/termsandcons.vue";
