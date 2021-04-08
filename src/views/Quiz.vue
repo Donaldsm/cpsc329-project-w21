@@ -33,8 +33,9 @@
       <div v-if="this.view == 4">
         <Q5Card class="mx-auto m-3" />
       </div>
-      <div v-if="this.view == 5"></div>
-      <div></div>
+      <div v-if="this.view == 5">
+        <Q6Card class="mx-auto m-3" />
+      </div>
       <div v-if="this.view == 6">
         <Messenger class="mx-auto m-3"></Messenger>
       </div>
