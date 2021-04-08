@@ -78,14 +78,6 @@ const sketch = function (p) {
             }
         }
 
-
-        p.textAlign(p.RIGHT, p.BOTTOM);
-        p.text(bobGuess, 1, 1);
-        p.textAlign(p.LEFT, p.BOTTOM);
-        p.text(aliceGuess, 1, 1);
-        p.textAlign(p.CENTER, p.CENTER);
-        p.text(result, 1, 1);
-
         p.drawSprites();
     }
 
