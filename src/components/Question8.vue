@@ -4,22 +4,24 @@
 
     <h1 class="text-4xl font-extrabold pb-6">Click "proceed to example.com", and do not worry it is safe</h1>
 
-    <img src="badheader.png" alt="header"> 
-    <img src="badwarning.png" alt="header"> 
+    <center> 
+      <img src="badheader.png" width="1500" height="60" alt="header"> 
+      <img src="badwarning.png" alt="header2"> 
+    </center>   
 
     <center>    
       <div class="btn-toolbar p-5 ">
         <button class = " max-w-xs hover:bg-gray-50 font-bold py-2 px-4 rounded ">Hide Advanced</button>
-        <button class = " max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded " @click="passed()">Back to safety</button>
+        <button class = " max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-96 " @click="passed()">Back to safety</button>
       </div>
     </center>
 
     <center>
-      <img src="badproceed.png" width="900" height="35" alt="header"> 
+      <img src="badproceed.png" width="680" height="35" alt="header"> 
     </center>
 
     <center>
-    <div style="width:900px;">  
+    <div style="width:680px;">  
 
       <p align="left">
         <button class = " max-w-xs text-black text-decoration: underline py-2 px-4 rounded mx-auto" @click="failed()">Proceed to example.com (unsafe)</button>
