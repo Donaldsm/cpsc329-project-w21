@@ -10,6 +10,8 @@
 
         <h1 class = "text-xl font-extrabold pb-6">GOOD LUCK!</h1>
 
-        <button type = "button" class = " max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto " >Go Back</button>
+        <router-link to='/'>
+            <button type = "button" class = " max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto " >Go Back</button>
+        </router-link>
     </div>
 </template>

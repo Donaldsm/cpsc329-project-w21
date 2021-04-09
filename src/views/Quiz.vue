@@ -38,8 +38,12 @@
         <Messenger class="mx-auto m-3"></Messenger>
       </div>
       <div v-if="this.view == 7"><Q8Card/></div>
-      <div v-if="this.view == 8"></div>
-      <div v-if="this.view == 9"></div>
+      <div v-if="this.view == 8">
+
+        <router-link to= "./end">
+          <button class= "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Done? Click here to see your Score!</button>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
