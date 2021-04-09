@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
 import Quiz from '../views/Quiz.vue';
+import TC from '../components/termsandcons.vue';
+import End from '../components/End.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +25,16 @@ const routes: RouteConfig[] = [
     name: 'Quiz',
     component: Quiz,
   },
+  {
+    path: '/termsandcons',
+    name: 'termsandcons',
+    component: TC,
+  },
+  {
+    path: '/ending',
+    name: 'end',
+    component: End,
+  }
 ];
 
 const router = new VueRouter({
