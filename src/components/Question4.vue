@@ -1,8 +1,9 @@
 <template>
-  <div class="">
-    <div v-if="this.part == 0">
-      <div class="flex justify-center flex-col">
-        <h1 class="text-4xl font-extrabold pb-6">Question 4:</h1>
+
+ <div class="">  
+      <div v-if="this.part == 0">
+          <div class ="flex justify-center flex-col">
+          <h1 class="text-4xl font-extrabold pb-6">Question 4:</h1>
 
         <h1 class="text-2xl font-bold pb-40">
           Simply go to the next question to continue.
@@ -69,33 +70,36 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+<script>
 
-export default class Q4Card extends Vue {
-  private part: number = 0;
-  public counter: number = 0;
-  date() {
+export default {
+  
+  data () {
     return {
-      counter: 0,
-    };
-  }
-  updatePopup() {
+        part: 0,
+        counter: 0,
+    }
+  },
+
+  methods:{
+    updatePopup() {
     var r = confirm("Please update web flash player");
     if (r == true) {
-      this.counter++;
-    }
-    this.part++;
-    this.$forceUpdate();
-  }
+        this.counter +=1;
+      
+      }
+      this.part +=1;
+      this.$forceUpdate();
+    },
 
-  failed() {
-    this.counter++;
+    failed() {
+        this.counter +=1;
+    }
   }
+  
 
   nextPart() {
     // next question
   }
 }
 </script>
-

@@ -40,4 +40,3 @@ export default class Q6Card extends Vue {
 }
 
 </script>
-

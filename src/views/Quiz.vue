@@ -29,22 +29,21 @@
       <div v-if="this.view == 2">
         <Q3Card class="mx-auto m-3" />
       </div>
-      <div v-if="this.view == 3">
-        <Q4Card class="mx-auto m-3" />
-      </div>
+      <div v-if="this.view == 3"><Q4Card/></div>
       <div v-if="this.view == 4">
         <Q5Card class="mx-auto m-3" />
       </div>
-      <div v-if="this.view == 5">
-        <Q6Card class="mx-auto m-3" />
-      </div>
+      <div v-if="this.view == 5"><Q6Card/></div>
       <div v-if="this.view == 6">
         <Messenger class="mx-auto m-3"></Messenger>
       </div>
-      <div v-if="this.view == 7"><Q8Card class="mx-auto m-3" /></div>
+      <div v-if="this.view == 7"><Q8Card/></div>
+      <div v-if="this.view == 8">
 
-      <div v-if="this.view == 8"></div>
-      <div v-if="this.view == 9"></div>
+        <router-link to= "./end">
+          <button class= "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Done? Click here to see your Score!</button>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -52,16 +51,15 @@
 
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import Q1Card from "@/components/Question1Card.vue";
-import Q3Card from "@/components/Question3.vue";
-import Q4Card from "@/components/Question4.vue";
-import Q5Card from "@/components/Question5.vue";
-import Q6Card from "@/components/Question6.vue";
-import Q8Card from "@/components/Question8.vue";
-import Messenger from "../components/Messenger.vue";
-import Identification from "../components/Identification.vue";
-
+import {Component, Vue} from 'vue-property-decorator';
+import Q1Card from '@/components/Question1Card.vue';
+import Q3Card from '@/components/Question3.vue';
+import Q4Card from '@/components/Question4.vue';
+import Q5Card from '@/components/Question5.vue';
+import Q6Card from '@/components/Question6.vue';
+import Q8Card from '@/components/Question8.vue';
+import Messenger from '../components/Messenger.vue';
+import Identification from '../components/Identification.vue';
 import TC from "@/components/termsandcons.vue";
 
 @Component({
@@ -69,10 +67,10 @@ import TC from "@/components/termsandcons.vue";
     Q1Card,
     Q3Card,
     Q5Card,
-    Q8Card,
     TC,
     Q4Card,
     Q6Card,
+    Q8Card,
     Messenger,
     Identification,
   },
