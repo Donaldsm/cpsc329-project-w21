@@ -70,9 +70,7 @@ import TC from "@/components/termsandcons.vue";
     Q3Card,
     Q5Card,
     Q8Card,
-
     TC,
-
     Q4Card,
     Q6Card,
     Messenger,
@@ -84,11 +82,13 @@ export default class Quiz1 extends Vue {
 
   changeNextView() {
     this.view++;
+    console.log(this.view);
     this.$forceUpdate();
   }
 
   changePrevView() {
     this.view--;
+    console.log(this.view);
     this.$forceUpdate();
   }
 }
