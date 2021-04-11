@@ -16,7 +16,7 @@ import Identification from '../components/Identification.vue';
     },
 })
 export default class Quiz1 extends Vue {
-    // private score: number;
+    //private score: number;
 
 }
 </script>
