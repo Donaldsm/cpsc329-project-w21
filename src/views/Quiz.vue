@@ -21,7 +21,7 @@
     <div>
       <!-- <TC/> -->
       <div v-if="this.view == 0">
-        <Q1Card />
+        <Q1Card @clicked=q1clicked />
       </div>
       <div v-if="this.view == 1">
         <identification class="mx-auto m-3"></identification>
@@ -40,7 +40,7 @@
       <div v-if="this.view == 7"><Q8Card/></div>
       <div v-if="this.view == 8">
 
-        <router-link to= "./end">
+        <router-link to= "./ending">
           <button class= "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Done? Click here to see your Score!</button>
         </router-link>
       </div>
@@ -78,6 +78,8 @@ import TC from "@/components/termsandcons.vue";
 export default class Quiz1 extends Vue {
   private view: number = 0;
 
+  private person: any;
+
   changeNextView() {
     this.view++;
     console.log(this.view);
@@ -88,6 +90,12 @@ export default class Quiz1 extends Vue {
     this.view--;
     console.log(this.view);
     this.$forceUpdate();
+  }
+  // @ts-ignore
+  q1clicked(value) {
+    this.person = value;
+    this.view++;
+    console.log(this.person);
   }
 }
 </script>

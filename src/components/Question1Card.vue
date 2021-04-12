@@ -60,7 +60,8 @@
           bday: undefined,
           fcol: undefined,
           city: undefined,
-          icecream: undefined
+          icecream: undefined,
+          person: undefined,
         }
         
       
@@ -76,7 +77,21 @@
       if (this.city != undefined){this.counter +=1;}
 
       console.log(this.counter);
+
+      this.person = {
+        counter: this.counter,
+        fname: this.fname,
+        lname: this.lname,
+        pno: this.pno,
+        bday: this.bday,
+        city: this.city,
+        icecream: this.icecream,
+        fcol: this.fcol
+      }
+
+      this.$emit('clicked', this.person)
     },
+    
   }
 
   }
