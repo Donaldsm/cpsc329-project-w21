@@ -97,9 +97,5 @@ export default {
     }
   }
   
-
-  nextPart() {
-    // next question
-  }
 }
 </script>
