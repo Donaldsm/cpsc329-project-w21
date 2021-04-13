@@ -6,12 +6,7 @@
     >
       <router-link class="m-3 hover:text-blue-200" to="/">Home</router-link>
 
-      <router-link class="m-3 hover:text-blue-200" to="/quiz1"
-        >Quiz</router-link
-      >
-
-      <router-link class="m-3 hover:text-blue-200" to="/about"
-        >About</router-link
+      <router-link class="m-3 hover:text-blue-200" to="/about">About</router-link
       >
     </div>
     <router-view />

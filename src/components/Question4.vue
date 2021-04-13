@@ -71,7 +71,7 @@
 </template>
 
 <script>
-
+// @ts-ignore
 export default {
   
   data () {
@@ -89,7 +89,10 @@ export default {
       
       }
       this.part +=1;
-      this.$forceUpdate();
+      let result = {
+        score: this.counter,
+      }
+      this.$emit('clicked', this.result);
     },
 
     failed() {

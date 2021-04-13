@@ -21,27 +21,34 @@
     <div>
       <!-- <TC/> -->
       <div v-if="this.view == 0">
-        <Q1Card @clicked=q1clicked />
+        <Q1Card @clicked="q1clicked" />
       </div>
       <div v-if="this.view == 1">
-        <identification class="mx-auto m-3"></identification>
+        <identification
+          class="mx-auto m-3"
+          :userInputs="this.person"
+          @clicked="q2clicked"
+        ></identification>
       </div>
       <div v-if="this.view == 2">
-        <Q3Card class="mx-auto m-3" />
+        <Q3Card class="mx-auto m-3" @clicked="q3clicked" />
       </div>
-      <div v-if="this.view == 3"><Q4Card/></div>
+      <div v-if="this.view == 3"><Q4Card @clicked="q4clicked" /></div>
       <div v-if="this.view == 4">
-        <Q5Card class="mx-auto m-3" />
+        <Q5Card class="mx-auto m-3" @clicked="q5clicked" />
       </div>
-      <div v-if="this.view == 5"><Q6Card/></div>
+      <div v-if="this.view == 5"><Q6Card @clicked="q6clicked" /></div>
       <div v-if="this.view == 6">
-        <Messenger class="mx-auto m-3"></Messenger>
+        <Messenger class="mx-auto m-3" @clicked="q7clicked"></Messenger>
       </div>
-      <div v-if="this.view == 7"><Q8Card/></div>
+      <div v-if="this.view == 7"><Q8Card @clicked="q8clicked" /></div>
       <div v-if="this.view == 8">
-
-        <router-link to= "./ending">
-          <button class= "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Done? Click here to see your Score!</button>
+        <router-link to="./ending">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Done? Click here to see your Score!
+          </button>
         </router-link>
       </div>
     </div>
@@ -51,15 +58,16 @@
 
 
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator';
-import Q1Card from '@/components/Question1Card.vue';
-import Q3Card from '@/components/Question3.vue';
-import Q4Card from '@/components/Question4.vue';
-import Q5Card from '@/components/Question5.vue';
-import Q6Card from '@/components/Question6.vue';
-import Q8Card from '@/components/Question8.vue';
-import Messenger from '../components/Messenger.vue';
-import Identification from '../components/Identification.vue';
+// @ts-ignore
+import { Component, Vue } from "vue-property-decorator";
+import Q1Card from "@/components/Question1Card.vue";
+import Q3Card from "@/components/Question3.vue";
+import Q4Card from "@/components/Question4.vue";
+import Q5Card from "@/components/Question5.vue";
+import Q6Card from "@/components/Question6.vue";
+import Q8Card from "@/components/Question8.vue";
+import Messenger from "../components/Messenger.vue";
+import Identification from "../components/Identification.vue";
 import TC from "@/components/termsandcons.vue";
 
 @Component({
@@ -75,9 +83,10 @@ import TC from "@/components/termsandcons.vue";
     Identification,
   },
 })
+// @ts-ignore
 export default class Quiz1 extends Vue {
   private view: number = 0;
-
+  private score: number = 0;
   private person: any;
 
   changeNextView() {
@@ -94,8 +103,109 @@ export default class Quiz1 extends Vue {
   // @ts-ignore
   q1clicked(value) {
     this.person = value;
+    console.log(value);
     this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
     console.log(this.person);
+  }
+  // @ts-ignore
+  q2clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q3clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q4clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q5clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q6clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q7clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q8clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q9clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+  // @ts-ignore
+  q10clicked(value) {
+    this.person = value;
+    console.log(value);
+    this.view++;
+    this.score = this.score + value.score;
+    this.loser();
+    this.$forceUpdate();
+    console.log(this.person);
+  }
+
+  loser() {
+    console.log("checking loser");
+    if (this.score > 50) {
+      this.view = 10;
+    }
   }
 }
 </script>

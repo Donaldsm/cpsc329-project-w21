@@ -48,6 +48,7 @@
 </template>
 
 <script>
+// @ts-ignore
   export default {
 
     data: function() {
@@ -79,7 +80,7 @@
       console.log(this.counter);
 
       this.person = {
-        counter: this.counter,
+        score: this.counter,
         fname: this.fname,
         lname: this.lname,
         pno: this.pno,
