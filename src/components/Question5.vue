@@ -63,7 +63,7 @@ export default {
     },
     con(){
         let result = {
-            scrore: this.counter,
+            score: this.counter,
         }
         this.$emit('clicked', result);
     }

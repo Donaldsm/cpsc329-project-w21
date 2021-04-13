@@ -92,7 +92,7 @@ export default {
       let result = {
         score: this.counter,
       }
-      this.$emit('clicked', this.result);
+      this.$emit('clicked', result);
     },
 
     failed() {

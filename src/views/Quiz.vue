@@ -43,13 +43,7 @@
       </div>
       <div v-if="this.view == 7"><Q8Card @clicked="q8clicked" /></div>
       <div v-if="this.view == 8">
-        <router-link to="./ending">
-          <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          >
-            Done? Click here to see your Score!
-          </button>
-        </router-link>
+        <End :score="this.score" />
       </div>
     </div>
   </div>
@@ -59,16 +53,17 @@
 
 <script lang="ts">
 // @ts-ignore
-import { Component, Vue } from "vue-property-decorator";
-import Q1Card from "@/components/Question1Card.vue";
-import Q3Card from "@/components/Question3.vue";
-import Q4Card from "@/components/Question4.vue";
-import Q5Card from "@/components/Question5.vue";
-import Q6Card from "@/components/Question6.vue";
-import Q8Card from "@/components/Question8.vue";
-import Messenger from "../components/Messenger.vue";
-import Identification from "../components/Identification.vue";
-import TC from "@/components/termsandcons.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import Q1Card from '@/components/Question1Card.vue';
+import Q3Card from '@/components/Question3.vue';
+import Q4Card from '@/components/Question4.vue';
+import Q5Card from '@/components/Question5.vue';
+import Q6Card from '@/components/Question6.vue';
+import Q8Card from '@/components/Question8.vue';
+import Messenger from '../components/Messenger.vue';
+import Identification from '../components/Identification.vue';
+import TC from '@/components/termsandcons.vue';
+import End from '@/components/End.vue';
 
 @Component({
   components: {
@@ -81,6 +76,7 @@ import TC from "@/components/termsandcons.vue";
     Q8Card,
     Messenger,
     Identification,
+    End
   },
 })
 // @ts-ignore
@@ -108,7 +104,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q2clicked(value) {
@@ -118,7 +114,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q3clicked(value) {
@@ -128,7 +124,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q4clicked(value) {
@@ -138,7 +134,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q5clicked(value) {
@@ -148,7 +144,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q6clicked(value) {
@@ -158,7 +154,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q7clicked(value) {
@@ -168,7 +164,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q8clicked(value) {
@@ -178,7 +174,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q9clicked(value) {
@@ -188,7 +184,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
   // @ts-ignore
   q10clicked(value) {
@@ -198,7 +194,7 @@ export default class Quiz1 extends Vue {
     this.score = this.score + value.score;
     this.loser();
     this.$forceUpdate();
-    console.log(this.person);
+    console.log(this.score);
   }
 
   loser() {
