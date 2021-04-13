@@ -89,14 +89,21 @@ export default {
       
       }
       this.part +=1;
-      let result = {
-        score: this.counter,
-      }
-      this.$emit('clicked', result);
+      // let result = {
+      //   score: this.counter,
+      // }
+      // this.$emit('clicked', result);
     },
 
     failed() {
         this.counter +=1;
+    },
+
+    nextPart() {
+      let result = {
+        score: this.counter,
+      }
+      this.$emit('clicked', result);
     }
   }
   
