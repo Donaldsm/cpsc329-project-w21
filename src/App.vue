@@ -4,9 +4,9 @@
       id="nav"
       class="text-left bg-yellow-300 p-5 font-fira font-medium mb-3"
     >
-      <router-link class="m-3 hover:text-blue-200" to="/">Home</router-link>
+      <router-link class="m-3 hover:text-blue-200" to="/cpsc329quiz/">Home</router-link>
 
-      <router-link class="m-3 hover:text-blue-200" to="/about">About</router-link
+      <router-link class="m-3 hover:text-blue-200" to="/cpsc329quiz/about">About</router-link
       >
     </div>
     <router-view />

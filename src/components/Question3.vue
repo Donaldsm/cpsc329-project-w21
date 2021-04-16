@@ -7,7 +7,7 @@
     </div>
 
     <div class="row">
-      <img src="img/Q3.png" alt="" />
+      <img class="mx-auto" src="/img/Q3.png" alt="" />
 
       <h1>
         source: https://www.explainxkcd.com/wiki/index.php/1553:_Public_Key

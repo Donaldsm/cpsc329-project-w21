@@ -5,14 +5,14 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
 ### Compiles css and tailwind for use:
 ```
 npx tailwindcss build prestyles.css -o src/assets/styles.css
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
 ```
 
 ### Compiles and minifies for production

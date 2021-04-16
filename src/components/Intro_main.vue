@@ -8,7 +8,7 @@
 
     <h3 class="text-xl font-bold p-6">Click the Link below to start!</h3>
 
-    <router-link to="/quiz">
+    <router-link to="/cpsc329quiz/quiz">
       <button
         class="bg-yellow-300 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded"
       >
@@ -16,7 +16,7 @@
       </button>
     </router-link>
     <div id="terms">
-      <router-link to="/termsandcons" class="text-blue-300 hover:text-blue-500"
+      <router-link to="/cpsc329quiz/termsandcons" class="text-blue-300 hover:text-blue-500"
         >terms and conditions</router-link
       >
     </div>

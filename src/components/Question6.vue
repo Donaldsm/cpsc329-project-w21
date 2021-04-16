@@ -16,7 +16,7 @@
 
     <div class="row">
       <h1>1)</h1>
-      <img class="mx-auto" width="500" height="800" src="img/Q61.png" alt="" />
+      <img class="mx-auto" width="500" height="800" src="/img/Q61.png" alt="" />
 
       <div>
         <h1>2)</h1>
@@ -24,7 +24,7 @@
           class="mx-auto"
           width="500"
           height="500"
-          src="img/Q62.png"
+          src="/img/Q62.png"
           alt=""
         />
       </div>

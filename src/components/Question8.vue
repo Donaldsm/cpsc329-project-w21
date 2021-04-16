@@ -9,8 +9,8 @@
     </h1>
 
     <center>
-      <img src="badheader.png" width="1500" height="60" alt="header" />
-      <img src="badwarning.png" alt="header2" />
+      <img src="/badheader.png" width="1500" height="60" alt="header" />
+      <img src="/badwarning.png" alt="header2" />
     </center>
 
     <center>
@@ -28,7 +28,7 @@
     </center>
 
     <center>
-      <img src="badproceed.png" width="680" height="35" alt="header" />
+      <img src="/badproceed.png" width="680" height="35" alt="header" />
     </center>
 
     <center>

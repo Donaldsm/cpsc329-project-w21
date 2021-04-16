@@ -2,7 +2,7 @@
 <template>
   <div class="">
     <div class="flex flex wrap">
-      <button
+      <!-- <button
         v-if="this.view != 0"
         @click="changePrevView()"
         class="max-w-xs bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mx-auto"
@@ -15,7 +15,7 @@
         class="max-w-xs bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mx-auto"
       >
         Next Question
-      </button>
+      </button> -->
     </div>
 
     <div>
